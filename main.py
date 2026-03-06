@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index(name=None):
-    return render_template("Index.html", person=name)
+    return render_template("index.html", person=name)
 
 
 @app.route('/login', methods=['POST', 'GET'])
