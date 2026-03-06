@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request
 
+
 app = Flask(__name__)
+app.logger.setLevel(20) # Set logger to INFO or higher
 
 @app.route('/')
-def index(name=None):
-    return render_template("index.html", person=name)
+def index(name=None, ongoingEvents=[]):
+    return render_template("index.html", person=name, ongoingEvents=ongoingEvents)
 
 
 @app.route('/login', methods=['POST', 'GET'])
