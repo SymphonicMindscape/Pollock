@@ -9,3 +9,12 @@ Self-hosted website for scheduling game nights.
 #### Future Additions
 1. Once an event is created, send an email out to everyone to let them see available days to suggest for the event.
 2. Email will direct to the Event Details Screen for the event, where user can then vote on dates for event.
+
+
+
+##### WIP Notes
+~~Started implementing DB connection logic. <br>~~
+~~Created DB tables for users and events. <br>~~
+~~Started authentication logic.~~
+
+Going through and writing HTML for render templates.
